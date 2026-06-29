@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — Pikake Floral Studio</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="18" stroke="#7B241C" stroke-width="2"/><circle cx="19" cy="10" r="4" fill="#F1948A"/><circle cx="26.2" cy="14" r="4" fill="#F1948A"/><circle cx="26.2" cy="24" r="4" fill="#F1948A"/><circle cx="19" cy="28" r="4" fill="#F1948A"/><circle cx="11.8" cy="24" r="4" fill="#F1948A"/><circle cx="11.8" cy="14" r="4" fill="#F1948A"/><circle cx="19" cy="19" r="5" fill="#7B241C"/></svg>
+      <span>Pikake Floral — Admin</span>
+    </a>
+    <div class="header-actions">
+      <button id="theme-toggle" class="btn-theme">🌙</button>
+    </div>
+  </div>
+</header>
+<main>
+  <!-- LOGIN -->
+  <div id="login-section">
+    <div class="admin-login">
+      <div class="admin-card">
+        <h1>Admin Login</h1>
+        <p>Enter your password to access the dashboard.</p>
+        <form id="admin-login-form">
+          <div class="form-group">
+            <label for="admin-pw">Password</label>
+            <input type="password" id="admin-pw" placeholder="Enter password" autocomplete="current-password">
+          </div>
+          <p id="login-error" style="color:#DC2626;font-size:0.85rem;margin-bottom:0.75rem;"></p>
+          <button type="submit" class="btn-primary" style="width:100%;">Log In</button>
+        </form>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:1rem;text-align:center;">Demo password: admin123</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="admin-dash" class="admin-dash">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <h1 style="font-family:var(--font-heading);font-size:1.8rem;color:var(--text);">Dashboard</h1>
+        <p style="color:var(--text-muted);">Welcome back, Malia. Here's what's happening at Pikake Floral.</p>
+      </div>
+      <a href="index.html" style="font-size:0.9rem;color:var(--primary);font-weight:700;">← View Site</a>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">24</div><div class="stat-label">Bookings This Month</div></div>
+      <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">Pending Consultations</div></div>
+      <div class="stat-card"><div class="stat-num">$8,420</div><div class="stat-label">Revenue This Month</div></div>
+      <div class="stat-card"><div class="stat-num">4.9★</div><div class="stat-label">Average Review</div></div>
+    </div>
+
+    <!-- BOOKINGS -->
+    <div class="admin-table-wrap">
+      <h2>Recent Bookings</h2>
+      <table>
+        <thead><tr><th>Name</th><th>Service</th><th>Date</th><th>Amount</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Leilani Kahale</td><td>Wedding Package</td><td>Jul 12, 2025</td><td>$1,200</td><td><span class="badge badge-green">Confirmed</span></td></tr>
+          <tr><td>Keiko Yamamoto</td><td>Lei Order (10)</td><td>Jul 5, 2025</td><td>$350</td><td><span class="badge badge-green">Confirmed</span></td></tr>
+          <tr><td>Mark Torres</td><td>Custom Arrangement</td><td>Jul 8, 2025</td><td>$95</td><td><span class="badge badge-yellow">Pending</span></td></tr>
+          <tr><td>Auntie Rosa Mele</td><td>Weekly Delivery</td><td>Jul 1, 2025</td><td>$55</td><td><span class="badge badge-green">Active</span></td></tr>
+          <tr><td>David Nakamura</td><td>Event Florals</td><td>Jul 20, 2025</td><td>$650</td><td><span class="badge badge-yellow">Quote Sent</span></td></tr>
+          <tr><td>Kai Reeves</td><td>Bridal Bouquet</td><td>Aug 3, 2025</td><td>$175</td><td><span class="badge badge-yellow">Pending</span></td></tr>
+          <tr><td>Susan Park</td><td>Baby Shower Florals</td><td>Jul 15, 2025</td><td>$280</td><td><span class="badge badge-green">Confirmed</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- MESSAGES -->
+    <div class="admin-table-wrap">
+      <h2>Recent Messages</h2>
+      <table>
+        <thead><tr><th>From</th><th>Subject</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>newbride@email.com</td><td>Wedding bouquet inquiry — September</td><td>Jun 28, 2025</td><td><span class="badge badge-red">Unread</span></td></tr>
+          <tr><td>events@kailua.com</td><td>Corporate event florals needed</td><td>Jun 27, 2025</td><td><span class="badge badge-red">Unread</span></td></tr>
+          <tr><td>jessica.k@gmail.com</td><td>Lei order for graduation</td><td>Jun 26, 2025</td><td><span class="badge badge-green">Replied</span></td></tr>
+          <tr><td>taro.fields@farm.com</td><td>Anthurium delivery next week</td><td>Jun 25, 2025</td><td><span class="badge badge-green">Read</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<script src="js/main.js"></script>
+
+  <!-- Powered by Design Holistically -->
+  <footer style="background:#111;color:#aaa;text-align:center;padding:1.5rem;font-size:0.85rem;font-family:sans-serif;">
+    <p>&copy; 2024. Powered by <a href="https://designholistically.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Design Holistically</a>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

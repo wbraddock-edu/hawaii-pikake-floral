@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Consultation — Pikake Floral Studio | Kailua, Oahu</title>
+<meta name="description" content="Book a floral consultation with Pikake Floral Studio. Wedding flowers, leis, custom arrangements, and event florals.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="18" stroke="#7B241C" stroke-width="2"/><circle cx="19" cy="10" r="4" fill="#F1948A"/><circle cx="26.2" cy="14" r="4" fill="#F1948A"/><circle cx="26.2" cy="24" r="4" fill="#F1948A"/><circle cx="19" cy="28" r="4" fill="#F1948A"/><circle cx="11.8" cy="24" r="4" fill="#F1948A"/><circle cx="11.8" cy="14" r="4" fill="#F1948A"/><circle cx="19" cy="19" r="5" fill="#7B241C"/></svg>
+      <span>Pikake Floral</span>
+    </a>
+    <nav><ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html">Book</a></li><li><a href="faq.html">FAQ</a></li><li><a href="reviews.html">Reviews</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="btn-theme">🌙</button>
+      <a href="booking.html" class="btn-book">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="page-hero">
+    <div class="section-inner">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Booking</div>
+      <h1>Book a Consultation</h1>
+      <p>Let's create something beautiful together. Fill out the form below to get started.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="booking-section">
+      <div class="step-indicator">
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+
+      <!-- STEP 1: Service -->
+      <div class="booking-step active" id="step-1">
+        <h2 style="font-family:var(--font-heading);font-size:1.5rem;margin-bottom:0.5rem;color:var(--text);">Step 1: Choose a Service</h2>
+        <p style="color:var(--text-muted);margin-bottom:1.5rem;">What can we create for you?</p>
+        <div class="service-option" onclick="this.classList.toggle('selected')">
+          <h3>Wedding Package</h3>
+          <p>Full wedding florals — bridal bouquet, ceremony, reception. Starting at $450.</p>
+        </div>
+        <div class="service-option" onclick="this.classList.toggle('selected')">
+          <h3>Lei Order</h3>
+          <p>Custom lei for graduation, arrival, gifts, or ceremony. From $35.</p>
+        </div>
+        <div class="service-option" onclick="this.classList.toggle('selected')">
+          <h3>Custom Arrangement</h3>
+          <p>One-of-a-kind arrangement for any occasion. From $75.</p>
+        </div>
+        <div class="service-option" onclick="this.classList.toggle('selected')">
+          <h3>Event Florals</h3>
+          <p>Corporate events, parties, and special celebrations. Custom quote.</p>
+        </div>
+        <div class="service-option" onclick="this.classList.toggle('selected')">
+          <h3>Weekly Delivery Subscription</h3>
+          <p>Fresh flowers delivered weekly to your home or office. From $55/week.</p>
+        </div>
+        <div class="form-nav">
+          <span></span>
+          <button class="btn-primary" data-next>Next: Date & Time →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Date & Time -->
+      <div class="booking-step" id="step-2">
+        <h2 style="font-family:var(--font-heading);font-size:1.5rem;margin-bottom:0.5rem;color:var(--text);">Step 2: Preferred Date & Time</h2>
+        <p style="color:var(--text-muted);margin-bottom:1.5rem;">When would you like to meet or receive your order?</p>
+        <div class="form-group">
+          <label for="booking-date">Preferred Date</label>
+          <input type="date" id="booking-date">
+        </div>
+        <div class="form-group">
+          <label for="booking-time">Preferred Time</label>
+          <select id="booking-time">
+            <option>8:00 AM – 9:00 AM</option>
+            <option>9:00 AM – 10:00 AM</option>
+            <option>10:00 AM – 11:00 AM</option>
+            <option>11:00 AM – 12:00 PM</option>
+            <option>1:00 PM – 2:00 PM</option>
+            <option>2:00 PM – 3:00 PM</option>
+            <option>3:00 PM – 4:00 PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="booking-notes">Event Date (if applicable)</label>
+          <input type="date" id="booking-event-date" placeholder="Actual event date">
+        </div>
+        <div class="form-nav">
+          <button class="btn-secondary" data-prev style="background:var(--bg2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:0.75rem 1.5rem;font-weight:700;cursor:pointer;min-height:44px;">← Back</button>
+          <button class="btn-primary" data-next>Next: Contact Info →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Contact -->
+      <div class="booking-step" id="step-3">
+        <h2 style="font-family:var(--font-heading);font-size:1.5rem;margin-bottom:0.5rem;color:var(--text);">Step 3: Your Contact Information</h2>
+        <p style="color:var(--text-muted);margin-bottom:1.5rem;">How can we reach you?</p>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="(808) 555-0000">
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Us About Your Vision</label>
+          <textarea id="message" placeholder="Colors, flowers you love, budget, special requests..."></textarea>
+        </div>
+        <div class="form-nav">
+          <button class="btn-secondary" data-prev style="background:var(--bg2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:0.75rem 1.5rem;font-weight:700;cursor:pointer;min-height:44px;">← Back</button>
+          <button class="btn-primary" data-next>Review & Confirm →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Confirmation -->
+      <div class="booking-step" id="step-4">
+        <div class="confirmation-box">
+          <div class="check">✿</div>
+          <h2>Mahalo! Your request has been received.</h2>
+          <p style="color:var(--text-muted);margin-top:0.75rem;">We'll reach out within 24 hours to confirm your consultation and discuss all the beautiful details. We can't wait to work with you!</p>
+          <div style="margin-top:2rem;">
+            <strong style="color:var(--text);">Pikake Floral Studio</strong><br>
+            <span style="color:var(--text-muted);">315 Uluniu Street, Kailua, HI 96734</span><br>
+            <a href="tel:+18085550126" style="color:var(--primary);">(808) 555-0126</a>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="index.html" class="btn-primary">Return to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="logo-wrap" style="color:#fff;">Pikake Floral Studio</div><p>315 Uluniu Street, Kailua, HI 96734<br>(808) 555-0126</p></div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+    <div class="footer-col"><h4>Info</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="booking.html">Book Now</a></li></ul></div>
+    <div class="footer-col"><h4>Hours</h4><ul><li><a href="#">Mon–Fri 8am–6pm</a></li><li><a href="#">Sat 8am–4pm</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Pikake Floral Studio.</span><span>Powered by <a href="https://designholistically.com" target="_blank" rel="noopener">Design Holistically</a></span></div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
