@@ -227,3 +227,8 @@ td { padding: 0.7rem 0.75rem; border-top: 1px solid var(--border); color: var(--
 .page-hero p { font-size: 1.05rem; opacity: 0.85; max-width: 560px; }
 .breadcrumb { font-size: 0.85rem; opacity: 0.7; margin-bottom: 1rem; }
 .breadcrumb a { color: rgba(255,255,255,0.8); }
+
+.hero h1, .hero p, .hero-content, .hero .eyebrow-label, .hero .tag { color: #fff !important; }
+
+[data-theme="dark"] .hero { background: transparent !important; }
+[data-theme="dark"] .hero-bg img { opacity: 1 !important; }
